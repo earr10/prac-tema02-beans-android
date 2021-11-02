@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NOMBRE" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DIRECCION" />
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PESO" />
+
+    <Spinner
+        android:id="@+id/edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/insertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="insertarBD"
+        android:text="INSERTAR"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el Id para buscar el Usuario" />
+
+    <Button
+        android:id="@+id/eliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="eliminarBD"
+        android:text="ELIMINAR"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/actualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="actualizarBD"
+        android:text="ACTUALIZAR"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="buscarBD"
+        android:text="BUSCAR"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+</LinearLayout>
